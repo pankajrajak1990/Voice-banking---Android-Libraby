@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+
+>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/ScrollView01"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+    >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/right_margin">
+
+            <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="80dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sim_pragma_logo"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/right_margin"
+                android:layout_marginLeft="@dimen/left_margin">
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/please_enter"
+                      android:textSize="18dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:id="@+id/li_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="@dimen/right_margin"
+        >
+
+
+            <EditText
+                    android:id="@+id/et_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Mobile Number"
+                    android:digits="0123456789"
+                    android:inputType="phone"
+                    android:padding="4dp"
+                    android:background="@drawable/textinput_border"
+            />
+
+        </LinearLayout>
+        // mobile number
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="@dimen/right_margin"
+                android:weightSum="2">
+
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Email"
+                    android:padding="4dp"
+                    android:drawablePadding="4dp"
+                    android:drawableRight="@drawable/ic_person_black_24dp"
+                    android:background="@drawable/textinput_border"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="@dimen/right_margin"
+        >
+
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:drawableRight="@drawable/ic_lock_black_24dp"
+                    android:drawablePadding="4dp"
+                    android:padding="4dp"
+                    android:background="@drawable/textinput_border"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/left_margin"
+                android:layout_marginLeft="@dimen/right_margin">
+
+
+            <Button
+                    android:id="@+id/btn_registration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Login"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:onClick="IntentToVoice"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
